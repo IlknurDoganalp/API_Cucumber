@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="1.347" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="US1002 kullanici JPH endpoint'ine Post request gonderir" name="TCO2 Kullanici Post request sonucu donen response'i test eder" time="1.291">
+<system-out><![CDATA[
+Given Kullanici "jPHBaseUrl" base URL'ini kullanir..........................passed
+Then Path parametreleri icin "posts/70" kullanir............................passed
+And POST request icin "Ahmet", "Merhaba", 10 70 bilgileri ile request body olusturur.passed
+And jPH server a POST request gonderir ve testleri yapmak icin response degerini kaydede.passed
+Then jPH respons'da status degerinin 200....................................passed
+And jPH respons 'da content type degerinin "application/json; charset=utf-8".passed
+And jPH respons daki "Connection" header degerinin "keep-alive".............passed
+Then response attribute 'lerindeki degerlerinin "Ahmet", "Merhaba", 10 70...passed
+]]></system-out>
+</testcase>
+</testsuite>
