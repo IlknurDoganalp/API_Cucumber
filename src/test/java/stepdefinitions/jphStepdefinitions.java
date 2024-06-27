@@ -65,10 +65,10 @@ public class jphStepdefinitions {
 //     And POST request icin "Ahmet", "Merhaba", 10 70 bilgileri ile request body olusturur
 
         request=new JSONObject(); // class lecvelda olusturup, atamayi bu satirda yaptik.
-        request.put("title","Ahmet");
-        request.put("body","Merhaba");
-        request.put("userId",10);
-        request.put("id",70);
+        request.put("title",title);
+        request.put("body",body);
+        request.put("userId",userId);
+        request.put("id",id);
 
 
     }
