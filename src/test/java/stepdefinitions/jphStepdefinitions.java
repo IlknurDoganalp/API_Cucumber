@@ -17,6 +17,7 @@ public class jphStepdefinitions {
     Response response;
     JsonPath responseJP;
     JSONObject request;
+
     @Given("Kullanici {string} base URL'ini kullanir")
     public void kullanici_base_url_ini_kullanir(String string) {
         endpoint= ConfigReader.getProperty("jPHBaseUrl");
